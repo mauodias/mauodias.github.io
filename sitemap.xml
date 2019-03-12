@@ -18,13 +18,38 @@
   </url>
   
   <url>
+    <loc>https://mauricio.cc/tags/development/</loc>
+    <lastmod>2019-03-11T00:25:01-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauricio.cc/tags/pep/</loc>
+    <lastmod>2019-03-11T00:25:01-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mauricio.cc/post/</loc>
     <lastmod>2019-03-11T00:25:01-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://mauricio.cc/tags/projects/</loc>
+    <lastmod>2019-03-11T00:25:01-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauricio.cc/tags/python/</loc>
+    <lastmod>2019-03-11T00:25:01-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mauricio.cc/tags/</loc>
+    <lastmod>2019-03-11T00:25:01-03:00</lastmod>
     <priority>0</priority>
   </url>
   
