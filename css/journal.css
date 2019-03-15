@@ -197,9 +197,8 @@ h6 {
 .post .post-header {
   margin-bottom: 3rem; }
 .post .post-date {
-  display: block;
   margin: 0 0 1rem;
-  text-align: right; }
+}
 
 .hljs {
   font-size: .875rem; }
