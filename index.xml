@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mauricio.cc</title>
-    <link>http://mauricio.cc/</link>
+    <link>https://mauricio.cc/</link>
     <description>Recent content on mauricio.cc</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 09 Apr 2020 23:19:32 +0200</lastBuildDate>
     
-	<atom:link href="http://mauricio.cc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mauricio.cc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Email</title>
-      <link>http://mauricio.cc/email/</link>
+      <link>https://mauricio.cc/email/</link>
       <pubDate>Thu, 09 Apr 2020 23:19:32 +0200</pubDate>
       
-      <guid>http://mauricio.cc/email/</guid>
+      <guid>https://mauricio.cc/email/</guid>
       <description>To avoid bots scraping around and sending me even more spam that I already receive, I won&amp;rsquo;t explicitly write my email. You can see it below:</description>
     </item>
     
     <item>
       <title>If I ever write something, it will be here</title>
-      <link>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</link>
+      <link>https://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</link>
       <pubDate>Thu, 09 Apr 2020 22:58:24 +0200</pubDate>
       
-      <guid>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</guid>
+      <guid>https://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://mauricio.cc/about/</link>
+      <link>https://mauricio.cc/about/</link>
       <pubDate>Thu, 09 Apr 2020 22:24:14 +0200</pubDate>
       
-      <guid>http://mauricio.cc/about/</guid>
+      <guid>https://mauricio.cc/about/</guid>
       <description>tl;dr Software developer. Infrastructure engineer. I like python, infrastructure as code, automation, linux sysadmin and weird old technology.
 Current Employer Working for Itility, currently allocated at ASML.
 Past Employers  ThoughtWorks Hogarth Worldwide Sindus ANDRITZ Lakes Environmental Dell SAP Valid  Skills  Python C# Java Shell scripting Javascript Ansible Terraform Cloudformation AWS GCP Some CICDs (GoCD, CircleCI, Buildkite, Bamboo, they&amp;rsquo;re mostly the same)  There are more in my LinkedIn profile.</description>
