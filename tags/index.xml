@@ -1,50 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on mauricio.cc</title>
-    <link>https://mauricio.cc/tags/</link>
+    <link>http://mauricio.cc/tags/</link>
     <description>Recent content in Tags on mauricio.cc</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:25:01 -0300</lastBuildDate>
     
-	<atom:link href="https://mauricio.cc/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mauricio.cc/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Development</title>
-      <link>https://mauricio.cc/tags/development/</link>
-      <pubDate>Mon, 11 Mar 2019 00:25:01 -0300</pubDate>
-      
-      <guid>https://mauricio.cc/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pep</title>
-      <link>https://mauricio.cc/tags/pep/</link>
-      <pubDate>Mon, 11 Mar 2019 00:25:01 -0300</pubDate>
-      
-      <guid>https://mauricio.cc/tags/pep/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://mauricio.cc/tags/projects/</link>
-      <pubDate>Mon, 11 Mar 2019 00:25:01 -0300</pubDate>
-      
-      <guid>https://mauricio.cc/tags/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mauricio.cc/tags/python/</link>
-      <pubDate>Mon, 11 Mar 2019 00:25:01 -0300</pubDate>
-      
-      <guid>https://mauricio.cc/tags/python/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

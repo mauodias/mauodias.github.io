@@ -1,34 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mauricio.cc</title>
-    <link>https://mauricio.cc/</link>
+    <link>http://mauricio.cc/</link>
     <description>Recent content on mauricio.cc</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:25:01 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 23:19:32 +0200</lastBuildDate>
     
-	<atom:link href="https://mauricio.cc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mauricio.cc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>One PEP a Week</title>
-      <link>https://mauricio.cc/post/one-pep-a-week/</link>
-      <pubDate>Mon, 11 Mar 2019 00:25:01 -0300</pubDate>
+      <title>Email</title>
+      <link>http://mauricio.cc/email/</link>
+      <pubDate>Thu, 09 Apr 2020 23:19:32 +0200</pubDate>
       
-      <guid>https://mauricio.cc/post/one-pep-a-week/</guid>
-      <description>This is another of those attempts we think that will last for a long time, but has a huge potential of happening only once and never again. Anyway, here we go.
-One PEP a Week will be a personal project in which every week I&amp;rsquo;ll review one PEP that I find relevant, give some opinions on it and, hopefully, learn a lot. Please note that these posts will be filled with opinions and potential mistakes, so be kind on the feedbacks.</description>
+      <guid>http://mauricio.cc/email/</guid>
+      <description>To avoid bots scraping around and sending me even more spam that I already receive, I won&amp;rsquo;t explicitly write my email. You can see it below:</description>
+    </item>
+    
+    <item>
+      <title>If I ever write something, it will be here</title>
+      <link>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</link>
+      <pubDate>Thu, 09 Apr 2020 22:58:24 +0200</pubDate>
+      
+      <guid>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://mauricio.cc/about/</link>
-      <pubDate>Thu, 30 Aug 2018 15:56:14 -0300</pubDate>
+      <link>http://mauricio.cc/about/</link>
+      <pubDate>Thu, 09 Apr 2020 22:24:14 +0200</pubDate>
       
-      <guid>https://mauricio.cc/about/</guid>
-      <description>Who am I? Graduated from Pontifícia Universidade Católica do Rio Grande do Sul in 2017 with a degree in Computer Science, I work in the IT industry since 2010. After a brief adventure in the technical support realm, I became a software developer and never left this world (and don&amp;rsquo;t plan to).
-During this journey, I had colleagues in the following companies:
- Valid SAP Dell Lakes Environmental Sindus ANDRITZ Hogarth Worldwide  And today I&amp;rsquo;m a Consultant Developer at ThoughtWorks, working with IT infrastructure and devops.</description>
+      <guid>http://mauricio.cc/about/</guid>
+      <description>tl;dr Software developer. Infrastructure engineer. I like python, infrastructure as code, automation, linux sysadmin and weird old technology.
+Current Employer Working for Itility, currently allocated at ASML.
+Past Employers  ThoughtWorks Hogarth Worldwide Sindus ANDRITZ Lakes Environmental Dell SAP Valid  Skills  Python C# Java Shell scripting Javascript Ansible Terraform Cloudformation AWS GCP Some CICDs (GoCD, CircleCI, Buildkite, Bamboo, they&amp;rsquo;re mostly the same)  There are more in my LinkedIn profile.</description>
     </item>
     
   </channel>

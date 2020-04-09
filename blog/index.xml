@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on mauricio.cc</title>
+    <link>http://mauricio.cc/blog/</link>
+    <description>Recent content in Blogs on mauricio.cc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 09 Apr 2020 22:58:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://mauricio.cc/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>If I ever write something, it will be here</title>
+      <link>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</link>
+      <pubDate>Thu, 09 Apr 2020 22:58:24 +0200</pubDate>
+      
+      <guid>http://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
