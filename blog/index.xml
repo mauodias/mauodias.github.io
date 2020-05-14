@@ -5,18 +5,18 @@
     <link>https://mauricio.cc/blog/</link>
     <description>Recent content in Blog on mauricio.cc</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Apr 2020 09:51:08 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 22:34:04 +0200</lastBuildDate>
     
 	<atom:link href="https://mauricio.cc/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>If I ever write something, it will be here</title>
-      <link>https://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</link>
-      <pubDate>Fri, 10 Apr 2020 09:51:08 +0200</pubDate>
+      <title>Copying text to terminal based VMs in VirtualBox</title>
+      <link>https://mauricio.cc/blog/copying_to_terminal_based_vms_in_virtualbox/</link>
+      <pubDate>Thu, 14 May 2020 22:34:04 +0200</pubDate>
       
-      <guid>https://mauricio.cc/blog/if_i_ever_write_something_it_will_be_here/</guid>
-      <description></description>
+      <guid>https://mauricio.cc/blog/copying_to_terminal_based_vms_in_virtualbox/</guid>
+      <description>You are configuring a terminal only virtual machine using VirtualBox. At some point, you need to download a file using wget. The URL is 150 characters long, with the usual mix of underscores, dashes, slashes, upper and lower case letters, numbers&amp;hellip; Or, even worse, you need to enter your extremely long and complex password without seeing what you type. And remember, you CANNOT use the clipboard, because there&amp;rsquo;s no such thing in bare terminal VMs.</description>
     </item>
     
   </channel>

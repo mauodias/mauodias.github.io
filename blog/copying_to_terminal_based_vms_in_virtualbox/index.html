@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Maurício Dias">
+    <meta name="description" content="Maurício Dias&#39; Personal Website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://mauricio.cc">
+    <title>
+  Copying text to terminal based VMs in VirtualBox · mauricio.cc
+</title>
+
+    <link rel="canonical" href="https://mauricio.cc/blog/copying_to_terminal_based_vms_in_virtualbox/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://mauricio.cc/css/coder.min.c64f02871aaea0f8e838022a0d9b0a5ba24a575b4b29bebe37eafe7f562fd2fc.css" integrity="sha256-xk8ChxquoPjoOAIqDZsKW6JKV1tLKb6&#43;N&#43;r&#43;f1Yv0vw=" media="screen" crossorigin="anonymous">
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://mauricio.cc/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mauricio.cc/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.65.3" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://mauricio.cc">
+      mauricio.cc
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mauricio.cc/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mauricio.cc/blog/">Blog</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Copying text to terminal based VMs in VirtualBox</h1>
+    </header>
+
+    <p>You are configuring a terminal only virtual machine using VirtualBox. At some point, you need to download a file using wget. The URL is 150 characters long, with the usual mix of underscores, dashes, slashes, upper and lower case letters, numbers&hellip; Or, even worse, you need to enter your extremely long and complex password without seeing what you type. And remember, you <em>CANNOT</em> use the clipboard, because there&rsquo;s no such thing in bare terminal VMs.</p>
+<p>Thanks to <a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=80315&amp;start=15#p414817">this comment in a VirtualBox forum thread</a>, I found that there is a solution(-ish) for that problem, added to VirtualBox on version 5.2.0. See below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Type a string in the VM</span>
+$ VBoxManage controlvm &lt;uuid|vmname&gt; keyboardputstring &lt;string1&gt; <span style="color:#f92672">[</span>&lt;string2&gt; ...<span style="color:#f92672">]</span>
+
+<span style="color:#75715e"># Type the contents of a file</span>
+$ VBoxManage controlvm &lt;uuid|vmname&gt; keyboardputfile &lt;filename&gt;
+
+<span style="color:#75715e"># Type specific scan codes</span>
+$ VBoxManage controlvm &lt;uuid|vmname&gt; keyboardputscancode &lt;hex&gt; <span style="color:#f92672">[</span>&lt;hex&gt; ...<span style="color:#f92672">]</span>
+</code></pre></div><p>Replace &lt;uuid|vmname&gt; with the respective information from your VM. The rest of the commands are self explanatory.</p>
+<p>Things worth noting:</p>
+<ul>
+<li>Only works with ASCII characters</li>
+<li>For *nix based OSes, some escaping is required (\\ to actually type \)</li>
+<li>\n won&rsquo;t work for pressing enter or line breaks</li>
+<li>Some specific keypresses need to be processed in a different way, such as pressing ENTER. It has to be explicitly pressed <em>and released</em>, using scan codes. See the example below:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ VBoxManage controlvm VMNAME keyboardputstring ls -la
+$ VBoxManage controlvm VMNAME keyboardputscancode 1c 9c
+</code></pre></div><p>This types <code>ls -la</code>, presses ENTER with <code>1c</code> and releases ENTER with <code>9c</code>. For a nice list of available scan codes, look <a href="https://www.win.tue.nl/~aeb/linux/kbd/scancodes-1.html">here</a>.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>DEV, IAAS, CICD, DEVOPS and many other acronyms</p>
+    
+     © 2020    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
